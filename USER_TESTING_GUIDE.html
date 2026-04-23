@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+    <meta charset="utf-8">
+    <title>SecureOX User Testing Guide</title>
+    <style>
+        body {
+            font-family: Calibri, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2563eb;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 10px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #1e40af;
+            margin-top: 30px;
+            font-size: 22px;
+        }
+        h3 {
+            color: #1e3a8a;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        strong {
+            color: #1e40af;
+        }
+        .note {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .section {
+            margin: 30px 0;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>SecureOX User Testing Guide</h1>
+
+    <p>Welcome to SecureOX! This guide will help you create a test account and explore the application.</p>
+
+    <div class="section">
+        <h2>Getting Started</h2>
+
+        <h3>1. Access the Application</h3>
+        <p>Navigate to the SecureOX landing page in your web browser.</p>
+
+        <h3>2. Create a New Account</h3>
+
+        <p><strong>Step 1: Registration</strong></p>
+        <ol>
+            <li>Click the "Get Started" button on the landing page</li>
+            <li>On the authentication page, click "Sign Up" tab</li>
+            <li>Enter your email address</li>
+            <li>Create a secure password (minimum 6 characters)</li>
+            <li>Click "Sign Up"</li>
+        </ol>
+
+        <p><strong>Step 2: Phone Verification</strong></p>
+        <ol>
+            <li>After successful registration, you'll be redirected to the phone verification page</li>
+            <li>Enter your 10-digit phone number (format: 1234567890)</li>
+            <li>Click "Verify Phone Number"</li>
+            <li>You'll receive a verification code (Note: In test mode, you can use any 6-digit code)</li>
+            <li>Enter the 6-digit verification code</li>
+            <li>Click "Verify Code"</li>
+        </ol>
+
+        <h3>3. Access the Dashboard</h3>
+        <p>Once verified, you'll be automatically logged into the SecureOX dashboard.</p>
+    </div>
+
+    <div class="section">
+        <h2>Using the Application</h2>
+
+        <h3>Available Features</h3>
+
+        <p><strong>Text Encryption Tool</strong></p>
+        <ul>
+            <li>Encrypt sensitive text messages</li>
+            <li>Decrypt previously encrypted messages</li>
+            <li>Copy encrypted text to clipboard</li>
+        </ul>
+
+        <p><strong>Image OCR Tool</strong></p>
+        <ul>
+            <li>Upload images containing text</li>
+            <li>Extract text from images automatically</li>
+            <li>Supports JPG, PNG, and GIF formats</li>
+            <li>Maximum file size: 5MB</li>
+        </ul>
+
+        <p><strong>Interactive Chatbot</strong></p>
+        <ul>
+            <li>Get help with using the application</li>
+            <li>Available on both landing page and dashboard</li>
+            <li>Click the chat icon in the bottom-right corner</li>
+        </ul>
+
+        <h3>Security Features</h3>
+
+        <p><strong>Auto Sign-Out</strong></p>
+        <ul>
+            <li>The application automatically signs you out after 60 seconds of inactivity</li>
+            <li>You'll see a warning message 5 seconds before automatic sign-out</li>
+            <li>Move your mouse, type, or scroll to reset the timer</li>
+        </ul>
+
+        <p><strong>Manual Sign-Out</strong></p>
+        <ul>
+            <li>Click the "Sign Out" button in the top-right corner of the dashboard</li>
+            <li>This immediately logs you out and returns you to the landing page</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Login Instructions (Returning Users)</h2>
+        <ol>
+            <li>Click "Get Started" from the landing page</li>
+            <li>Make sure you're on the "Sign In" tab</li>
+            <li>Enter your registered email address</li>
+            <li>Enter your password</li>
+            <li>Click "Sign In"</li>
+            <li>Complete phone verification if prompted</li>
+            <li>Access your dashboard</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Test Account Creation</h2>
+
+        <h3>For Multiple Testers</h3>
+        <p>Each tester should:</p>
+        <ol>
+            <li>Use their own unique email address</li>
+            <li>Create a unique password</li>
+            <li>Provide their own phone number for verification</li>
+        </ol>
+
+        <h3>Test Scenarios to Try</h3>
+
+        <p><strong>1. Registration Flow</strong></p>
+        <ul>
+            <li>Test with valid email formats</li>
+            <li>Test password requirements</li>
+            <li>Complete phone verification</li>
+        </ul>
+
+        <p><strong>2. Login Flow</strong></p>
+        <ul>
+            <li>Test successful login</li>
+            <li>Test with incorrect credentials</li>
+            <li>Test password reset (if available)</li>
+        </ul>
+
+        <p><strong>3. Text Encryption</strong></p>
+        <ul>
+            <li>Encrypt a message</li>
+            <li>Copy encrypted text</li>
+            <li>Decrypt the same message</li>
+            <li>Verify the original text matches</li>
+        </ul>
+
+        <p><strong>4. Image OCR</strong></p>
+        <ul>
+            <li>Upload an image with clear text</li>
+            <li>Verify text extraction accuracy</li>
+            <li>Test different image formats</li>
+            <li>Test file size limits</li>
+        </ul>
+
+        <p><strong>5. Session Management</strong></p>
+        <ul>
+            <li>Test manual sign-out</li>
+            <li>Test auto sign-out after 60 seconds of inactivity</li>
+            <li>Verify you're returned to landing page after sign-out</li>
+        </ul>
+
+        <p><strong>6. Security Testing</strong></p>
+        <ul>
+            <li>Try accessing dashboard without logging in</li>
+            <li>Test session persistence across page refreshes</li>
+            <li>Verify data is secure and private to your account</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Troubleshooting</h2>
+
+        <p><strong>Can't register?</strong></p>
+        <ul>
+            <li>Ensure your email format is valid</li>
+            <li>Password must be at least 6 characters</li>
+            <li>Check if the email is already registered</li>
+        </ul>
+
+        <p><strong>Phone verification failing?</strong></p>
+        <ul>
+            <li>Ensure phone number is exactly 10 digits</li>
+            <li>No spaces, dashes, or special characters</li>
+            <li>Use format: 1234567890</li>
+        </ul>
+
+        <p><strong>Can't upload image?</strong></p>
+        <ul>
+            <li>File must be JPG, PNG, or GIF</li>
+            <li>Maximum file size is 5MB</li>
+            <li>Ensure image contains readable text</li>
+        </ul>
+
+        <p><strong>Signed out unexpectedly?</strong></p>
+        <ul>
+            <li>This is the auto sign-out security feature</li>
+            <li>Move your mouse or interact with the page to stay active</li>
+            <li>Sign in again to continue</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Feedback</h2>
+        <p>When testing, please note:</p>
+        <ul>
+            <li>Any bugs or unexpected behavior</li>
+            <li>UI/UX issues or suggestions</li>
+            <li>Performance concerns</li>
+            <li>Security observations</li>
+            <li>Feature requests</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Support</h2>
+        <p>For questions or issues during testing, please contact the development team.</p>
+    </div>
+
+    <hr>
+
+    <div class="note">
+        <p><strong>Security Note:</strong> This is a test environment. While the application uses real security measures, please avoid using highly sensitive personal information during testing.</p>
+    </div>
+
+</body>
+</html>
